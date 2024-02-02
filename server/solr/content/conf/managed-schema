@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
+<schema name="test" version="1.6">
+  <uniqueKey>ID</uniqueKey>
+  <fieldType name="date" class="solr.TrieDateField" omitNorms="true" sortMissingLast="true"/>
+  <fieldType name="nametext" class="solr.TextField">
+    <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
+  </fieldType>
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
+  <fieldType name="text" class="solr.TextField">
+    <analyzer>
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.StopFilterFactory"/>
+      <filter class="solr.PorterStemFilterFactory"/>
+    </analyzer>
+  </fieldType>
+  <field name="ID" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="contentDesc" type="string" indexed="true" stored="true"/>
+  <field name="contentName" type="string" indexed="true" stored="true"/>
+  <field name="contentSubType" type="string" indexed="true" stored="true"/>
+  <field name="contentType" type="string" indexed="true" stored="true"/>
+  <field name="localdte" type="date" uninvertible="true" indexed="true" stored="true"/>
+  <field name="logic" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" sortMissingLast="true" docValues="true" termVectors="true" required="false" default="ravi" sortMissingFirst="true" termOffsets="true" stored="true" uninvertible="true" termPayloads="true" termPositions="true" omitPositions="true" multiValued="true"/>
+  <field name="try" type="string" uninvertible="true" indexed="true" required="true" stored="true"/>
+  <field name="userId" type="string" uninvertible="true" indexed="true" stored="true"/>
+  <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
+  <dynamicField name="*" type="string" multiValued="true" indexed="true" stored="true"/>
+</schema>
