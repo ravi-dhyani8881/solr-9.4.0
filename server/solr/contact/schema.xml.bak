@@ -41,11 +41,17 @@
     </analyzer>
   </fieldType>
 
-  
-  <fieldType name="nametext" class="solr.TextField">
-    <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
-  </fieldType>
+  <!-- FieldType for integer -->
+  <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
 
+  <!-- FieldType for date -->
+  <fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+
+  <!-- FieldType for decimal -->
+  <fieldType name="decimal" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+
+  <!-- FieldType for currency -->
+  <fieldType name="currency" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
 
   <field name="Id" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
   <field name="Name" type="string" indexed="true" stored="true"/>
@@ -54,8 +60,11 @@
   <field name="AccountId" type="string" indexed="true" stored="true"/>
   <field name="replyHeading" type="string" indexed="true" stored="true"/>
   <field name="replyBody" type="string" indexed="true" stored="true"/>
-  
 
+  <field name="intValue" type="int" indexed="true" stored="true"/>
+  <field name="dateValue" type="date" indexed="true" stored="true"/>
+  <field name="decimalValue" type="decimal" indexed="true" stored="true"/>
+  <field name="currencyValue" type="currency" indexed="true" stored="true"/>
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
        will be used if the name matches any of the patterns.
@@ -69,15 +78,7 @@
   <dynamicField name="*_sm" type="string" indexed="true" stored="true" multiValued="true"/>
 
   <!-- Fields for language identification -->
-  <dynamicField name="Id_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Name_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Email_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Phone_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="AccountId_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="replyBody_*" type="string" indexed="true" stored="false"/>
-  
 
   <uniqueKey>Id</uniqueKey>
-
 
 </schema>

@@ -1,49 +1,135 @@
-2024-01-05 23:16:55.661 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 11.0.14.1+0
-2024-01-05 23:16:55.959 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
-2024-01-05 23:16:55.987 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2024-01-05 23:16:55.995 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
-2024-01-05 23:16:55.995 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2024-01-05 23:16:55.995 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0
-2024-01-05 23:16:55.995 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-01-05T23:16:55.995890Z
-2024-01-05 23:16:55.998 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/logs/jvm_crash_35346.log
-2024-01-05 23:16:56.029 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr (source: system property: solr.solr.home)
-2024-01-05 23:16:56.052 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/solr.xml
-2024-01-05 23:16:56.096 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/lib]
-2024-01-05 23:16:56.927 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
-2024-01-05 23:16:57.238 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2024-01-05 23:16:57.240 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2024-01-05 23:16:57.432 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr
-2024-01-05 23:16:57.432 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact]
-2024-01-05 23:16:57.452 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
-2024-01-05 23:16:57.452 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-01-05 23:16:57.482 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-01-05 23:16:57.494 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-01-05 23:16:57.510 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
-2024-01-05 23:16:57.537 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
-2024-01-05 23:16:57.537 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact, trusted=true
-2024-01-05 23:16:57.579 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact], dataDir=[/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/data/]
-2024-01-05 23:16:57.626 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
-2024-01-05 23:16:57.958 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-01-05 23:16:58.009 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
-2024-01-05 23:16:58.075 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-01-05 23:16:58.097 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-01-05 23:16:58.097 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-01-05 23:16:58.105 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@25c5e994{solr-jetty-context.xml,/solr,file:///Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp}
-2024-01-05 23:16:58.119 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/logs/2024_01_05.request.log
-2024-01-05 23:16:58.122 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@12f3afb5{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-01-05 23:16:58.124 INFO  (main) [] o.e.j.s.Server Started Server@44ea608c{STARTING}[10.0.17,sto=0] @3978ms
-2024-01-05 23:16:58.231 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/conf
-2024-01-05 23:16:58.244 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-01-05 23:16:58.251 INFO  (searcherExecutor-13-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-01-05 23:20:08.963 INFO  (qtp979550238-27) [ t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1704496808879} status=0 QTime=8
-2024-01-05 23:20:08.968 INFO  (qtp979550238-53) [ t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1704496808880} status=0 QTime=14
-2024-01-05 23:27:26.985 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@44ea608c{STOPPING}[10.0.17,sto=0]
-2024-01-05 23:27:26.989 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@12f3afb5{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-01-05 23:27:27.002 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=91430202
-2024-01-05 23:27:27.004 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@4a5c5bea contact
-2024-01-05 23:27:27.004 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@4a5c5bea
-2024-01-05 23:27:27.024 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-01-05 23:27:27.032 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2024-01-05 23:27:27.040 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2024-01-05 23:27:27.044 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2024-01-05 23:27:27.057 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@25c5e994{solr-jetty-context.xml,/solr,file:///Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp/,STOPPED}{/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-02 12:12:38.518 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 21.0.1+12-LTS
+2024-02-02 12:12:39.202 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-02-02 12:12:39.232 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-02-02 12:12:39.245 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
+2024-02-02 12:12:39.246 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-02-02 12:12:39.248 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /workspaces/solr-9.4.0
+2024-02-02 12:12:39.248 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-02T12:12:39.248881755Z
+2024-02-02 12:12:39.255 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /workspaces/solr-9.4.0/server/logs/jvm_crash_7861.log
+2024-02-02 12:12:39.272 INFO  (main) [] o.a.l.s.MemorySegmentIndexInputProvider Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+2024-02-02 12:12:39.341 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=256
+2024-02-02 12:12:39.344 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /workspaces/solr-9.4.0/server/solr (source: system property: solr.solr.home)
+2024-02-02 12:12:39.375 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /workspaces/solr-9.4.0/server/solr/solr.xml
+2024-02-02 12:12:39.439 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/workspaces/solr-9.4.0/lib]
+2024-02-02 12:12:40.724 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-02-02 12:12:41.105 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-02-02 12:12:41.109 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-02-02 12:12:41.488 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /workspaces/solr-9.4.0/server/solr
+2024-02-02 12:12:41.489 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact]
+2024-02-02 12:12:41.541 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
+2024-02-02 12:12:41.541 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-02 12:12:41.589 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-02 12:12:41.599 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-02 12:12:41.622 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
+2024-02-02 12:12:41.672 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
+2024-02-02 12:12:41.680 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/contact, trusted=true
+2024-02-02 12:12:41.758 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/contact], dataDir=[/data/]
+2024-02-02 12:12:41.783 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@17167791 contact
+2024-02-02 12:12:41.784 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@17167791
+2024-02-02 12:12:41.804 ERROR (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Exception cleanupOldIndexDirectories => java.security.AccessControlException: access denied ("java.io.FilePermission" "/data" "read")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:488)
+java.security.AccessControlException: access denied ("java.io.FilePermission" "/data" "read")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:488) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:1085) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:411) ~[?:?]
+	at java.lang.SecurityManager.checkRead(SecurityManager.java:742) ~[?:?]
+	at sun.nio.fs.UnixPath.checkRead(UnixPath.java:789) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.readAttributesIfExists(UnixFileSystemProvider.java:182) ~[?:?]
+	at java.nio.file.Files.isDirectory(Files.java:2319) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.<init>(FSDirectory.java:127) ~[?:?]
+	at org.apache.lucene.store.MMapDirectory.<init>(MMapDirectory.java:237) ~[?:?]
+	at org.apache.lucene.store.MMapDirectory.<init>(MMapDirectory.java:166) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.open(FSDirectory.java:162) ~[?:?]
+	at org.apache.solr.core.NRTCachingDirectoryFactory.create(NRTCachingDirectoryFactory.java:53) ~[?:?]
+	at org.apache.solr.core.CachingDirectoryFactory.get(CachingDirectoryFactory.java:368) ~[?:?]
+	at org.apache.solr.core.SolrCore.getNewIndexDir(SolrCore.java:420) ~[?:?]
+	at org.apache.solr.core.SolrCore.cleanupOldIndexDirectories(SolrCore.java:3505) ~[?:?]
+	at org.apache.solr.core.SolrCore.doClose(SolrCore.java:1863) ~[?:?]
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1755) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1223) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1056) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1705) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1043) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.20.jar:4.2.20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:294) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-02-02 12:12:41.805 ERROR (coreLoadExecutor-11-thread-1) [] o.a.s.c.SolrCore Error while closing => java.lang.NullPointerException: Cannot invoke "org.apache.solr.core.snapshots.SolrSnapshotMetaDataManager.getSnapshotsDir()" because "this.snapshotMgr" is null
+	at org.apache.solr.core.SolrCore.doClose(SolrCore.java:1879)
+java.lang.NullPointerException: Cannot invoke "org.apache.solr.core.snapshots.SolrSnapshotMetaDataManager.getSnapshotsDir()" because "this.snapshotMgr" is null
+	at org.apache.solr.core.SolrCore.doClose(SolrCore.java:1879) ~[?:?]
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1755) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1223) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1056) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1705) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1043) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.20.jar:4.2.20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:294) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-02-02 12:12:41.812 ERROR (coreContainerWorkExecutor-2-thread-1) [] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [contact]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [contact]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$13(CoreContainer.java:1072) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.20.jar:4.2.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:294) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [contact]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1738) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1043) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.20.jar:4.2.20]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: access denied ("java.io.FilePermission" "/data/snapshot_metadata" "read")
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1231) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1056) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1705) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1043) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.20.jar:4.2.20]
+	... 5 more
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/data/snapshot_metadata" "read")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:488) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:1085) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:411) ~[?:?]
+	at java.lang.SecurityManager.checkRead(SecurityManager.java:742) ~[?:?]
+	at sun.nio.fs.UnixPath.checkRead(UnixPath.java:789) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.readAttributesIfExists(UnixFileSystemProvider.java:182) ~[?:?]
+	at java.nio.file.Files.isDirectory(Files.java:2319) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.<init>(FSDirectory.java:127) ~[?:?]
+	at org.apache.lucene.store.MMapDirectory.<init>(MMapDirectory.java:237) ~[?:?]
+	at org.apache.lucene.store.MMapDirectory.<init>(MMapDirectory.java:166) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.open(FSDirectory.java:162) ~[?:?]
+	at org.apache.solr.core.NRTCachingDirectoryFactory.create(NRTCachingDirectoryFactory.java:53) ~[?:?]
+	at org.apache.solr.core.CachingDirectoryFactory.get(CachingDirectoryFactory.java:368) ~[?:?]
+	at org.apache.solr.core.SolrCore.initSnapshotMetaDataManager(SolrCore.java:615) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1129) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1056) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1705) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1043) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.20.jar:4.2.20]
+	... 5 more
+2024-02-02 12:12:41.908 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
+2024-02-02 12:12:42.511 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-02 12:12:42.658 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@66d23e4a{solr-jetty-context.xml,/solr,file:///workspaces/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-02 12:12:42.682 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /workspaces/solr-9.4.0/server/logs/2024_02_02.request.log
+2024-02-02 12:12:42.686 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-02 12:12:42.688 INFO  (main) [] o.e.j.s.Server Started Server@452ba1db{STARTING}[10.0.17,sto=0] @8313ms
+2024-02-02 12:12:46.671 INFO  (qtp1866229258-47) [ t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706875966434} status=0 QTime=19
+2024-02-02 12:12:46.692 INFO  (qtp1866229258-23) [ t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706875966434} status=0 QTime=41
+2024-02-02 12:12:46.758 INFO  (qtp1866229258-31) [ t:localhost-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706875966434} status=0 QTime=15
+2024-02-02 12:15:23.738 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@452ba1db{STOPPING}[10.0.17,sto=0]
+2024-02-02 12:15:23.749 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-02 12:15:23.790 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2134357721
+2024-02-02 12:15:23.803 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2024-02-02 12:15:23.823 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2024-02-02 12:15:23.832 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2024-02-02 12:15:23.843 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@66d23e4a{solr-jetty-context.xml,/solr,null,STOPPED}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}

@@ -2,9 +2,10 @@
 <!-- Solr managed schema - automatically generated - DO NOT EDIT -->
 <schema name="test" version="1.6">
   <uniqueKey>Id</uniqueKey>
-  <fieldType name="nametext" class="solr.TextField">
-    <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
-  </fieldType>
+  <fieldType name="currency" class="solr.TrieDoubleField" positionIncrementGap="0" precisionStep="0"/>
+  <fieldType name="date" class="solr.TrieDateField" positionIncrementGap="0" precisionStep="0"/>
+  <fieldType name="decimal" class="solr.TrieDoubleField" positionIncrementGap="0" precisionStep="0"/>
+  <fieldType name="int" class="solr.TrieIntField" positionIncrementGap="0" precisionStep="0"/>
   <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
   <fieldType name="text" class="solr.TextField">
     <analyzer>
@@ -19,14 +20,12 @@
   <field name="Id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   <field name="Name" type="string" indexed="true" stored="true"/>
   <field name="Phone" type="string" indexed="true" stored="true"/>
+  <field name="currencyValue" type="currency" indexed="true" stored="true"/>
+  <field name="dateValue" type="date" indexed="true" stored="true"/>
+  <field name="decimalValue" type="decimal" indexed="true" stored="true"/>
+  <field name="intValue" type="int" indexed="true" stored="true"/>
   <field name="replyBody" type="string" indexed="true" stored="true"/>
   <field name="replyHeading" type="string" indexed="true" stored="true"/>
-  <dynamicField name="AccountId_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="replyBody_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Email_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Phone_*" type="string" indexed="true" stored="false"/>
-  <dynamicField name="Name_*" type="string" indexed="true" stored="false"/>
   <dynamicField name="*_sm" type="string" multiValued="true" indexed="true" stored="true"/>
-  <dynamicField name="Id_*" type="string" indexed="true" stored="false"/>
   <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
 </schema>
