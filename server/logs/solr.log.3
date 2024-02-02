@@ -1,0 +1,57 @@
+2024-01-05 22:44:54.366 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 11.0.14.1+0
+2024-01-05 22:44:54.782 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-01-05 22:44:54.816 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-01-05 22:44:54.824 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
+2024-01-05 22:44:54.824 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-01-05 22:44:54.824 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0
+2024-01-05 22:44:54.824 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-01-05T22:44:54.824353Z
+2024-01-05 22:44:54.828 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/logs/jvm_crash_25561.log
+2024-01-05 22:44:54.864 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr (source: system property: solr.solr.home)
+2024-01-05 22:44:54.887 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/solr.xml
+2024-01-05 22:44:54.928 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/lib]
+2024-01-05 22:44:55.880 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-01-05 22:44:56.212 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-01-05 22:44:56.214 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-01-05 22:44:56.424 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr
+2024-01-05 22:44:56.424 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact]
+2024-01-05 22:44:56.444 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
+2024-01-05 22:44:56.444 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-01-05 22:44:56.478 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-01-05 22:44:56.494 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-01-05 22:44:56.511 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
+2024-01-05 22:44:56.543 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
+2024-01-05 22:44:56.544 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact, trusted=true
+2024-01-05 22:44:56.603 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact], dataDir=[/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/data/]
+2024-01-05 22:44:56.675 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
+2024-01-05 22:44:57.017 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-01-05 22:44:57.085 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
+2024-01-05 22:44:57.149 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-01-05 22:44:57.173 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-01-05 22:44:57.173 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-01-05 22:44:57.174 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@25c5e994{solr-jetty-context.xml,/solr,file:///Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp}
+2024-01-05 22:44:57.187 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/logs/2024_01_05.request.log
+2024-01-05 22:44:57.192 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@12f3afb5{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-01-05 22:44:57.193 INFO  (main) [] o.e.j.s.Server Started Server@44ea608c{STARTING}[10.0.17,sto=0] @5094ms
+2024-01-05 22:44:57.363 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr/contact/conf
+2024-01-05 22:44:57.377 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-01-05 22:44:57.384 INFO  (searcherExecutor-13-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-01-05 22:46:07.602 INFO  (qtp979550238-57) [ t:localhost-35] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1704494767509} status=0 QTime=9
+2024-01-05 22:46:07.610 INFO  (qtp979550238-58) [ t:localhost-34] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1704494767509} status=0 QTime=19
+2024-01-05 22:46:10.685 INFO  (qtp979550238-58) [ t:localhost-36] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1704494767509} status=0 QTime=0
+2024-01-05 22:46:10.687 INFO  (qtp979550238-56) [ t:localhost-37] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1704494767509} status=0 QTime=2
+2024-01-05 22:46:10.691 INFO  (qtp979550238-50) [ x:contact t:localhost-38] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1704494770679} status=0 QTime=6
+2024-01-05 22:46:10.691 INFO  (qtp979550238-31) [ x:contact t:localhost-41] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1704494767509&ts=1704494767509} status=503 QTime=5
+2024-01-05 22:46:10.692 INFO  (qtp979550238-25) [ x:contact t:localhost-40] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1704494770679} status=0 QTime=7
+2024-01-05 22:46:10.693 INFO  (qtp979550238-52) [ x:contact t:localhost-39] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1704494770679} status=0 QTime=8
+2024-01-05 22:46:16.707 INFO  (qtp979550238-57) [ t:localhost-43] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1704494776640} status=0 QTime=0
+2024-01-05 22:46:16.711 INFO  (qtp979550238-30) [ t:localhost-44] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1704494776640} status=0 QTime=4
+2024-01-05 22:46:53.121 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@44ea608c{STOPPING}[10.0.17,sto=0]
+2024-01-05 22:46:53.124 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@12f3afb5{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-01-05 22:46:53.137 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=91430202
+2024-01-05 22:46:53.141 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@4f8d1388 contact
+2024-01-05 22:46:53.141 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@4f8d1388
+2024-01-05 22:46:53.160 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-01-05 22:46:53.169 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2024-01-05 22:46:53.178 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2024-01-05 22:46:53.182 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2024-01-05 22:46:53.192 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@25c5e994{solr-jetty-context.xml,/solr,file:///Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp/,STOPPED}{/Users/ravi.dhyani/Desktop/mine/software/solr-9.4.0/server/solr-webapp/webapp}

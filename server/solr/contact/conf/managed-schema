@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
+<schema name="test" version="1.6">
+  <uniqueKey>Id</uniqueKey>
+  <fieldType name="nametext" class="solr.TextField">
+    <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
+  </fieldType>
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
+  <fieldType name="text" class="solr.TextField">
+    <analyzer>
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.StopFilterFactory"/>
+      <filter class="solr.PorterStemFilterFactory"/>
+    </analyzer>
+  </fieldType>
+  <field name="AccountId" type="string" indexed="true" stored="true"/>
+  <field name="Email" type="string" indexed="true" stored="true"/>
+  <field name="Id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="Name" type="string" indexed="true" stored="true"/>
+  <field name="Phone" type="string" indexed="true" stored="true"/>
+  <field name="replyBody" type="string" indexed="true" stored="true"/>
+  <field name="replyHeading" type="string" indexed="true" stored="true"/>
+  <dynamicField name="AccountId_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="replyBody_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="Email_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="Phone_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="Name_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="*_sm" type="string" multiValued="true" indexed="true" stored="true"/>
+  <dynamicField name="Id_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
+</schema>
