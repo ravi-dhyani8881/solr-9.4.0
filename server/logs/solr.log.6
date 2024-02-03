@@ -1,60 +1,138 @@
-2024-02-02 12:35:43.354 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 21.0.1+12-LTS
-2024-02-02 12:35:43.875 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
-2024-02-02 12:35:43.930 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2024-02-02 12:35:43.944 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
-2024-02-02 12:35:43.954 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2024-02-02 12:35:43.955 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /workspaces/solr-9.4.0
-2024-02-02 12:35:43.955 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-02T12:35:43.955603184Z
-2024-02-02 12:35:43.958 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /workspaces/solr-9.4.0/server/logs/jvm_crash_18691.log
-2024-02-02 12:35:43.976 INFO  (main) [] o.a.l.s.MemorySegmentIndexInputProvider Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-2024-02-02 12:35:44.022 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=256
-2024-02-02 12:35:44.030 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /workspaces/solr-9.4.0/server/solr (source: system property: solr.solr.home)
-2024-02-02 12:35:44.060 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /workspaces/solr-9.4.0/server/solr/solr.xml
-2024-02-02 12:35:44.149 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/workspaces/solr-9.4.0/lib]
-2024-02-02 12:35:45.359 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
-2024-02-02 12:35:45.726 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2024-02-02 12:35:45.728 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2024-02-02 12:35:46.116 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /workspaces/solr-9.4.0/server/solr
-2024-02-02 12:35:46.117 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact]
-2024-02-02 12:35:46.175 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
-2024-02-02 12:35:46.175 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-02 12:35:46.289 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-02 12:35:46.329 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-02 12:35:46.367 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
-2024-02-02 12:35:46.412 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
-2024-02-02 12:35:46.413 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/contact, trusted=true
-2024-02-02 12:35:46.526 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/contact], dataDir=[/workspaces/solr-9.4.0/server/solr/contact/data/]
-2024-02-02 12:35:46.642 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
-2024-02-02 12:35:47.113 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
-2024-02-02 12:35:47.295 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-02 12:35:47.296 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-02 12:35:47.408 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-02 12:35:47.408 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-02 12:35:47.561 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@49a64d82{solr-jetty-context.xml,/solr,file:///workspaces/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
-2024-02-02 12:35:47.586 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /workspaces/solr-9.4.0/server/logs/2024_02_02.request.log
-2024-02-02 12:35:47.587 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/contact/conf
-2024-02-02 12:35:47.593 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-02-02 12:35:47.594 INFO  (main) [] o.e.j.s.Server Started Server@452ba1db{STARTING}[10.0.17,sto=0] @6975ms
-2024-02-02 12:35:47.603 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-02 12:35:47.610 INFO  (searcherExecutor-13-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-02 12:35:52.862 INFO  (qtp1866229258-27) [ t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706877352543} status=0 QTime=10
-2024-02-02 12:35:52.887 INFO  (qtp1866229258-31) [ x:contact t:localhost-5] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1706877352543&ts=1706877352543} status=503 QTime=19
-2024-02-02 12:35:52.888 INFO  (qtp1866229258-53) [ x:contact t:localhost-6] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1706877352604} status=0 QTime=1
-2024-02-02 12:35:52.896 INFO  (qtp1866229258-29) [ x:contact t:localhost-4] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1706877352604} status=0 QTime=29
-2024-02-02 12:35:52.941 INFO  (qtp1866229258-23) [ t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706877352543} status=0 QTime=77
-2024-02-02 12:35:52.941 INFO  (qtp1866229258-25) [ x:contact t:localhost-7] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1706877352604} status=0 QTime=51
-2024-02-02 12:35:56.282 INFO  (qtp1866229258-28) [ t:localhost-8] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706877352543} status=0 QTime=0
-2024-02-02 12:35:56.329 INFO  (qtp1866229258-29) [ x:contact t:localhost-11] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1706877352604} status=0 QTime=6
-2024-02-02 12:35:56.329 INFO  (qtp1866229258-51) [ x:contact t:localhost-10] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1706877356064} status=0 QTime=15
-2024-02-02 12:35:56.337 INFO  (qtp1866229258-32) [ t:localhost-9] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706877352543} status=0 QTime=52
-2024-02-02 12:35:56.355 INFO  (qtp1866229258-54) [ x:contact t:localhost-12] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1706877352604} status=0 QTime=0
-2024-02-02 12:36:29.422 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@452ba1db{STOPPING}[10.0.17,sto=0]
-2024-02-02 12:36:29.468 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-02-02 12:36:29.527 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=28612052
-2024-02-02 12:36:29.537 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@f7e1323 contact
-2024-02-02 12:36:29.539 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@f7e1323
-2024-02-02 12:36:29.609 INFO  (coreCloseExecutor-18-thread-1) [ x:contact] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-02 12:36:29.631 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2024-02-02 12:36:29.661 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2024-02-02 12:36:29.682 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2024-02-02 12:36:29.697 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@49a64d82{solr-jetty-context.xml,/solr,null,STOPPED}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-03 18:46:47.022 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 21.0.1+12-LTS
+2024-02-03 18:46:47.528 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-02-03 18:46:47.562 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-02-03 18:46:47.574 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
+2024-02-03 18:46:47.575 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-02-03 18:46:47.575 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /workspaces/solr-9.4.0
+2024-02-03 18:46:47.576 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-03T18:46:47.576710540Z
+2024-02-03 18:46:47.579 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /workspaces/solr-9.4.0/server/logs/jvm_crash_80652.log
+2024-02-03 18:46:47.592 INFO  (main) [] o.a.l.s.MemorySegmentIndexInputProvider Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+2024-02-03 18:46:47.649 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=256
+2024-02-03 18:46:47.658 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /workspaces/solr-9.4.0/server/solr (source: system property: solr.solr.home)
+2024-02-03 18:46:47.678 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /workspaces/solr-9.4.0/server/solr/solr.xml
+2024-02-03 18:46:47.724 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/workspaces/solr-9.4.0/lib]
+2024-02-03 18:46:49.432 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-02-03 18:46:50.002 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-02-03 18:46:50.004 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-02-03 18:46:50.278 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 8 core definitions underneath /workspaces/solr-9.4.0/server/solr
+2024-02-03 18:46:50.278 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact, review, like, users, content, helpFull, reply, apiKey]
+2024-02-03 18:46:50.333 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
+2024-02-03 18:46:50.333 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:50.343 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:50.343 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:50.425 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:50.426 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:50.436 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:50.442 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:50.446 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:50.470 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:50.475 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:50.491 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:50.520 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDoubleField Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2024-02-03 18:46:50.521 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDateField Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2024-02-03 18:46:50.523 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieIntField Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2024-02-03 18:46:50.533 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 18:46:50.533 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field likeId
+2024-02-03 18:46:50.534 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.CoreContainer Creating SolrCore 'like' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/like, trusted=true
+2024-02-03 18:46:50.535 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.CoreContainer Creating SolrCore 'review' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/review, trusted=true
+2024-02-03 18:46:50.536 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
+2024-02-03 18:46:50.536 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/contact, trusted=true
+2024-02-03 18:46:50.583 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/like], dataDir=[/workspaces/solr-9.4.0/server/solr/like/data/]
+2024-02-03 18:46:50.584 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/review], dataDir=[/workspaces/solr-9.4.0/server/solr/review/data/]
+2024-02-03 18:46:50.592 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/contact], dataDir=[/workspaces/solr-9.4.0/server/solr/contact/data/]
+2024-02-03 18:46:50.855 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
+2024-02-03 18:46:51.137 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
+2024-02-03 18:46:51.499 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:51.500 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:51.501 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:51.508 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:51.603 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:51.604 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:51.612 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:51.612 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:51.614 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:51.614 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:51.813 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/like/conf
+2024-02-03 18:46:51.815 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/contact/conf
+2024-02-03 18:46:51.834 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:51.840 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:51.842 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:51.843 INFO  (searcherExecutor-14-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:51.845 INFO  (searcherExecutor-15-thread-1-processing-like) [ x:like] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:51.848 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:51.848 WARN  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:51.849 WARN  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:51.851 WARN  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:51.852 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@66d23e4a{solr-jetty-context.xml,/solr,file:///workspaces/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-03 18:46:51.853 WARN  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:51.862 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:51.863 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 18:46:51.863 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.CoreContainer Creating SolrCore 'content' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/content, trusted=true
+2024-02-03 18:46:51.864 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/content], dataDir=[/workspaces/solr-9.4.0/server/solr/content/data/]
+2024-02-03 18:46:51.867 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:51.874 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/review/conf
+2024-02-03 18:46:51.874 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:51.880 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 18:46:51.881 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.CoreContainer Creating SolrCore 'users' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/users, trusted=true
+2024-02-03 18:46:51.881 INFO  (searcherExecutor-17-thread-1-processing-review) [ x:review] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:51.881 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/users], dataDir=[/workspaces/solr-9.4.0/server/solr/users/data/]
+2024-02-03 18:46:51.885 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /workspaces/solr-9.4.0/server/logs/2024_02_03.request.log
+2024-02-03 18:46:51.887 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:51.887 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:51.888 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:51.890 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:51.894 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field helpfulId
+2024-02-03 18:46:51.894 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.CoreContainer Creating SolrCore 'helpFull' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/helpFull, trusted=true
+2024-02-03 18:46:51.896 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/helpFull], dataDir=[/workspaces/solr-9.4.0/server/solr/helpFull/data/]
+2024-02-03 18:46:51.897 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-03 18:46:51.899 INFO  (main) [] o.e.j.s.Server Started Server@452ba1db{STARTING}[10.0.17,sto=0] @7282ms
+2024-02-03 18:46:52.169 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:52.173 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:52.210 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:52.215 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:52.215 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:52.219 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:52.219 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:52.253 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:52.253 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:52.268 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/helpFull/conf
+2024-02-03 18:46:52.268 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:52.270 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/users/conf
+2024-02-03 18:46:52.273 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:52.274 INFO  (searcherExecutor-32-thread-1-processing-helpFull) [ x:helpFull] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:52.277 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:52.277 INFO  (searcherExecutor-30-thread-1-processing-users) [ x:users] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:52.277 WARN  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:52.278 WARN  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:52.285 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 18:46:52.287 WARN  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 18:46:52.288 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:52.289 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 18:46:52.289 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.CoreContainer Creating SolrCore 'reply' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/reply, trusted=true
+2024-02-03 18:46:52.290 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/reply], dataDir=[/workspaces/solr-9.4.0/server/solr/reply/data/]
+2024-02-03 18:46:52.292 WARN  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 18:46:52.301 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 18:46:52.303 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 18:46:52.303 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.CoreContainer Creating SolrCore 'apiKey' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/apiKey, trusted=true
+2024-02-03 18:46:52.303 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/apiKey], dataDir=[/workspaces/solr-9.4.0/server/solr/apiKey/data/]
+2024-02-03 18:46:52.430 INFO  (qtp1866229258-26) [ t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706986012437} status=0 QTime=0
+2024-02-03 18:46:52.443 INFO  (qtp1866229258-27) [ x:like t:localhost-6] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1706986012471} status=0 QTime=1
+2024-02-03 18:46:52.446 INFO  (qtp1866229258-32) [ x:like t:localhost-7] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1706986012471} status=0 QTime=2
+2024-02-03 18:46:52.475 INFO  (qtp1866229258-23) [ x:like t:localhost-2] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1706986012438&ts=1706986012438} status=503 QTime=28
+2024-02-03 18:46:52.481 INFO  (qtp1866229258-31) [ x:like t:localhost-5] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1706986012471} status=0 QTime=44
+2024-02-03 18:46:52.504 INFO  (qtp1866229258-28) [ t:localhost-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706986012438} status=0 QTime=70
+2024-02-03 18:46:52.633 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:52.678 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 18:46:52.681 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:52.681 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:52.705 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/content/conf
+2024-02-03 18:46:52.707 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:52.710 INFO  (searcherExecutor-28-thread-1-processing-content) [ x:content] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:52.711 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 18:46:52.712 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 18:46:52.715 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/apiKey/conf
+2024-02-03 18:46:52.716 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:52.718 INFO  (searcherExecutor-45-thread-1-processing-apiKey) [ x:apiKey] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 18:46:52.733 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/reply/conf
+2024-02-03 18:46:52.734 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 18:46:52.736 INFO  (searcherExecutor-43-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms

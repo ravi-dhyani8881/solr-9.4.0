@@ -46,9 +46,8 @@
   </fieldType>
 
 
-  <field name="likeId" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
+  <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
   <field name="reviewId" type="string" indexed="true" stored="true"/>
-  <field name="ID" type="string" indexed="true" stored="true"/>
   <field name="contentId" type="string" indexed="true" stored="true"/>
   <field name="userId" type="string" indexed="true" stored="true"/>
   <field name="like" type="string" indexed="true" stored="true"/>
@@ -72,7 +71,7 @@
   <dynamicField name="like_*" type="string" indexed="true" stored="false"/>
   
 
-  <uniqueKey>likeId</uniqueKey>
+  <uniqueKey>ID</uniqueKey>
 
 
 </schema>
