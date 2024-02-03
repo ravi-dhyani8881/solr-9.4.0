@@ -45,9 +45,16 @@
     <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
   </fieldType>
 
+<updateRequestProcessorChain>
+	<processor class="solr.UUIDUpdateProcessorFactory">
+		<str name="fieldName">ID</str>
+	</processor>
+	<processor class="solr.LogUpdateProcessoryFactory" />
+	<processor class="solr.RunUpdateProcessorFactory" />
+</updateRequestProcessorChain>
 
-  <field name="helpfulId" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
-  <field name="ID" type="string" indexed="true" stored="true"/>
+  <field name="ID" type="string" indexed="true" stored="true" multiValued="false" />
+  
   <field name="reviewId" type="string" indexed="true" stored="true"/>
   <field name="contentId" type="string" indexed="true" stored="true"/>
   <field name="userId" type="string" indexed="true" stored="true"/>
@@ -72,7 +79,7 @@
   <dynamicField name="helpFull_*" type="string" indexed="true" stored="false"/>
   
 
-  <uniqueKey>helpfulId</uniqueKey>
+  <uniqueKey>ID</uniqueKey>
 
 
 </schema>
