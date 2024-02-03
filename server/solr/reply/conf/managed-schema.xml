@@ -19,7 +19,6 @@
   <field name="replyBody" type="string" indexed="true" stored="true"/>
   <field name="replyHeading" type="string" indexed="true" stored="true"/>
   <field name="reviewId" type="string" indexed="true" stored="true"/>
-  <field name="type" type="string" indexed="true" stored="true"/>
   <field name="userId" type="string" indexed="true" stored="true"/>
   <dynamicField name="replyHeading_*" type="string" indexed="true" stored="false"/>
   <dynamicField name="contentId_*" type="string" indexed="true" stored="false"/>

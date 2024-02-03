@@ -50,11 +50,8 @@
   <field name="contentId" type="string" indexed="true" stored="true"/>
   <field name="reviewId" type="string" indexed="true" stored="true"/>
   <field name="userId" type="string" indexed="true" stored="true"/>
-  <field name="type" type="string" indexed="true" stored="true"/>
   <field name="replyHeading" type="string" indexed="true" stored="true"/>
   <field name="replyBody" type="string" indexed="true" stored="true"/>
-  
-
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
        will be used if the name matches any of the patterns.

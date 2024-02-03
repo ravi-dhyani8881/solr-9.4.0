@@ -1,144 +1,168 @@
-2024-02-03 22:15:21.607 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 21.0.1+12-LTS
-2024-02-03 22:15:22.160 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
-2024-02-03 22:15:22.189 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2024-02-03 22:15:22.195 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
-2024-02-03 22:15:22.195 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2024-02-03 22:15:22.195 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /workspaces/solr-9.4.0
-2024-02-03 22:15:22.196 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-03T22:15:22.196009527Z
-2024-02-03 22:15:22.198 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /workspaces/solr-9.4.0/server/logs/jvm_crash_20868.log
-2024-02-03 22:15:22.210 INFO  (main) [] o.a.l.s.MemorySegmentIndexInputProvider Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-2024-02-03 22:15:22.278 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=256
-2024-02-03 22:15:22.282 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /workspaces/solr-9.4.0/server/solr (source: system property: solr.solr.home)
-2024-02-03 22:15:22.296 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /workspaces/solr-9.4.0/server/solr/solr.xml
-2024-02-03 22:15:22.351 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/workspaces/solr-9.4.0/lib]
-2024-02-03 22:15:23.961 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
-2024-02-03 22:15:24.388 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2024-02-03 22:15:24.393 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2024-02-03 22:15:24.653 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 8 core definitions underneath /workspaces/solr-9.4.0/server/solr
-2024-02-03 22:15:24.653 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact, review, like, users, content, helpFull, reply, apiKey]
-2024-02-03 22:15:24.671 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
-2024-02-03 22:15:24.672 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:24.672 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:24.675 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:24.731 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:24.731 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:24.737 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:24.743 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:24.768 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:24.772 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:24.776 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:24.810 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDoubleField Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
-2024-02-03 22:15:24.811 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDateField Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
-2024-02-03 22:15:24.812 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieIntField Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
-2024-02-03 22:15:24.831 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:24.831 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.CoreContainer Creating SolrCore 'review' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/review, trusted=true
-2024-02-03 22:15:24.833 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:24.834 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.CoreContainer Creating SolrCore 'like' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/like, trusted=true
-2024-02-03 22:15:24.834 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
-2024-02-03 22:15:24.834 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/contact, trusted=true
-2024-02-03 22:15:24.875 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/contact], dataDir=[/workspaces/solr-9.4.0/server/solr/contact/data/]
-2024-02-03 22:15:24.877 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/review], dataDir=[/workspaces/solr-9.4.0/server/solr/review/data/]
-2024-02-03 22:15:24.881 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/like], dataDir=[/workspaces/solr-9.4.0/server/solr/like/data/]
-2024-02-03 22:15:25.204 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
-2024-02-03 22:15:25.441 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
-2024-02-03 22:15:25.788 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:25.789 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:25.792 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:25.827 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:25.889 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:25.889 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:25.893 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:25.894 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:25.899 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:25.899 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.079 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@49a64d82{solr-jetty-context.xml,/solr,file:///workspaces/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
-2024-02-03 22:15:26.103 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /workspaces/solr-9.4.0/server/logs/2024_02_03.request.log
-2024-02-03 22:15:26.107 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-02-03 22:15:26.110 INFO  (main) [] o.e.j.s.Server Started Server@452ba1db{STARTING}[10.0.17,sto=0] @6713ms
-2024-02-03 22:15:26.110 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/review/conf
-2024-02-03 22:15:26.110 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/like/conf
-2024-02-03 22:15:26.111 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/contact/conf
-2024-02-03 22:15:26.122 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.122 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.131 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:26.132 WARN  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:26.133 WARN  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:26.133 INFO  (searcherExecutor-17-thread-1-processing-like) [ x:like] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.135 INFO  (searcherExecutor-13-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.138 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:26.139 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.141 INFO  (searcherExecutor-15-thread-1-processing-review) [ x:review] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.144 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:26.145 WARN  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:26.146 WARN  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:26.148 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:26.151 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:26.151 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:26.152 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:26.155 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:26.156 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:26.157 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:26.157 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.c.CoreContainer Creating SolrCore 'users' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/users, trusted=true
-2024-02-03 22:15:26.158 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/users], dataDir=[/workspaces/solr-9.4.0/server/solr/users/data/]
-2024-02-03 22:15:26.158 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.c.CoreContainer Creating SolrCore 'content' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/content, trusted=true
-2024-02-03 22:15:26.158 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/content], dataDir=[/workspaces/solr-9.4.0/server/solr/content/data/]
-2024-02-03 22:15:26.162 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:26.162 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.CoreContainer Creating SolrCore 'helpFull' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/helpFull, trusted=true
-2024-02-03 22:15:26.163 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/helpFull], dataDir=[/workspaces/solr-9.4.0/server/solr/helpFull/data/]
-2024-02-03 22:15:26.372 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:26.374 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:26.376 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:26.407 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:26.407 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.413 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:26.413 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.415 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:26.415 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.425 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/helpFull/conf
-2024-02-03 22:15:26.429 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.433 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:26.435 WARN  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:26.436 WARN  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:26.437 INFO  (searcherExecutor-32-thread-1-processing-helpFull) [ x:helpFull] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.452 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:26.459 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:26.462 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.CoreContainer Creating SolrCore 'reply' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/reply, trusted=true
-2024-02-03 22:15:26.464 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/reply], dataDir=[/workspaces/solr-9.4.0/server/solr/reply/data/]
-2024-02-03 22:15:26.474 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/users/conf
-2024-02-03 22:15:26.475 INFO  (coreLoadExecutor-11-thread-1) [ x:users] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.477 INFO  (searcherExecutor-28-thread-1-processing-users) [ x:users] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.489 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
-2024-02-03 22:15:26.490 WARN  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
-2024-02-03 22:15:26.495 WARN  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2024-02-03 22:15:26.506 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.s.IndexSchema Schema name=test
-2024-02-03 22:15:26.508 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
-2024-02-03 22:15:26.510 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.c.CoreContainer Creating SolrCore 'apiKey' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/apiKey, trusted=true
-2024-02-03 22:15:26.510 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/apiKey], dataDir=[/workspaces/solr-9.4.0/server/solr/apiKey/data/]
-2024-02-03 22:15:26.621 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:26.640 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/content/conf
-2024-02-03 22:15:26.650 INFO  (coreLoadExecutor-11-thread-3) [ x:content] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.652 INFO  (searcherExecutor-30-thread-1-processing-content) [ x:content] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.659 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:26.660 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.690 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/reply/conf
-2024-02-03 22:15:26.691 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.693 INFO  (searcherExecutor-43-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:26.696 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2024-02-03 22:15:26.708 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.u.CommitTracker Hard AutoCommit: disabled
-2024-02-03 22:15:26.708 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2024-02-03 22:15:26.716 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/apiKey/conf
-2024-02-03 22:15:26.716 INFO  (coreLoadExecutor-11-thread-1) [ x:apiKey] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2024-02-03 22:15:26.718 INFO  (searcherExecutor-46-thread-1-processing-apiKey) [ x:apiKey] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2024-02-03 22:15:32.365 INFO  (qtp1866229258-23) [ t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706998532283} status=0 QTime=5
-2024-02-03 22:15:32.408 INFO  (qtp1866229258-26) [ x:helpFull t:localhost-3] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1706998532307} status=0 QTime=36
-2024-02-03 22:15:32.409 INFO  (qtp1866229258-30) [ t:localhost-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706998532283} status=0 QTime=30
-2024-02-03 22:15:38.255 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-5] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1706998532308}{} 0 13
-2024-02-03 22:15:38.256 ERROR (qtp1866229258-32) [ x:helpFull t:localhost-5] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: ID
-	at org.apache.solr.update.AddUpdateCommand.extractIdsIfNeeded(AddUpdateCommand.java:172)
-org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: ID
-	at org.apache.solr.update.AddUpdateCommand.extractIdsIfNeeded(AddUpdateCommand.java:172) ~[?:?]
-	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:127) ~[?:?]
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:288) ~[?:?]
+2024-02-03 22:52:23.714 INFO  (main) [] o.e.j.s.Server jetty-10.0.17; built: 2023-10-09T18:22:21.150Z; git: af15f12297adf5c5083e1f2f8f4c5974438bca25; jvm 21.0.1+12-LTS
+2024-02-03 22:52:24.170 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-02-03 22:52:24.208 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-02-03 22:52:24.218 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.4.0
+2024-02-03 22:52:24.219 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-02-03 22:52:24.219 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /workspaces/solr-9.4.0
+2024-02-03 22:52:24.219 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-03T22:52:24.219793971Z
+2024-02-03 22:52:24.222 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /workspaces/solr-9.4.0/server/logs/jvm_crash_35564.log
+2024-02-03 22:52:24.242 INFO  (main) [] o.a.l.s.MemorySegmentIndexInputProvider Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+2024-02-03 22:52:24.323 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=256
+2024-02-03 22:52:24.327 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /workspaces/solr-9.4.0/server/solr (source: system property: solr.solr.home)
+2024-02-03 22:52:24.345 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /workspaces/solr-9.4.0/server/solr/solr.xml
+2024-02-03 22:52:24.406 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/workspaces/solr-9.4.0/lib]
+2024-02-03 22:52:25.737 INFO  (main) [] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-02-03 22:52:26.172 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-02-03 22:52:26.197 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-02-03 22:52:26.473 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 8 core definitions underneath /workspaces/solr-9.4.0/server/solr
+2024-02-03 22:52:26.473 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [contact, review, like, users, content, helpFull, reply, apiKey]
+2024-02-03 22:52:26.496 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
+2024-02-03 22:52:26.497 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:26.496 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:26.507 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:26.535 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:26.536 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:26.536 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:26.551 WARN  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 22:52:26.574 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:26.577 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:26.577 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:26.604 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDoubleField Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2024-02-03 22:52:26.610 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieDateField Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2024-02-03 22:52:26.612 WARN  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.D.s.TrieIntField Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2024-02-03 22:52:26.625 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field Id
+2024-02-03 22:52:26.626 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.CoreContainer Creating SolrCore 'contact' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/contact, trusted=true
+2024-02-03 22:52:26.629 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:26.630 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.CoreContainer Creating SolrCore 'review' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/review, trusted=true
+2024-02-03 22:52:26.630 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:26.630 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.CoreContainer Creating SolrCore 'like' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/like, trusted=true
+2024-02-03 22:52:26.674 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/contact], dataDir=[/workspaces/solr-9.4.0/server/solr/contact/data/]
+2024-02-03 22:52:26.681 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/review], dataDir=[/workspaces/solr-9.4.0/server/solr/review/data/]
+2024-02-03 22:52:26.682 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/like], dataDir=[/workspaces/solr-9.4.0/server/solr/like/data/]
+2024-02-03 22:52:26.940 WARN  (main) [] o.g.j.m.i.MessagingBinders A class javax.activation.DataSource for a default provider MessageBodyWriter<javax.activation.DataSource> was not found. The provider is not available.
+2024-02-03 22:52:27.199 WARN  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.D.s.StandardRequestHandler Solr loaded a deprecated plugin/analysis class [solr.StandardRequestHandler]. Please consult documentation how to replace it accordingly.
+2024-02-03 22:52:27.558 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:27.562 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:27.573 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:27.604 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:27.673 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:27.673 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:27.673 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:27.673 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:27.680 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:27.680 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:27.890 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/review/conf
+2024-02-03 22:52:27.891 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/contact/conf
+2024-02-03 22:52:27.891 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/like/conf
+2024-02-03 22:52:27.893 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@66d23e4a{solr-jetty-context.xml,/solr,file:///workspaces/solr-9.4.0/server/solr-webapp/webapp/,AVAILABLE}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-03 22:52:27.908 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /workspaces/solr-9.4.0/server/logs/2024_02_03.request.log
+2024-02-03 22:52:27.911 INFO  (coreLoadExecutor-11-thread-1) [ x:contact] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:27.911 INFO  (coreLoadExecutor-11-thread-3) [ x:like] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:27.917 INFO  (coreLoadExecutor-11-thread-2) [ x:review] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:27.924 INFO  (searcherExecutor-13-thread-1-processing-like) [ x:like] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:27.934 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:27.934 WARN  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:27.935 WARN  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 22:52:27.936 INFO  (searcherExecutor-17-thread-1-processing-review) [ x:review] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:27.937 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:27.941 INFO  (searcherExecutor-15-thread-1-processing-contact) [ x:contact] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:27.948 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:27.948 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.CoreContainer Creating SolrCore 'content' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/content, trusted=true
+2024-02-03 22:52:27.949 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/content], dataDir=[/workspaces/solr-9.4.0/server/solr/content/data/]
+2024-02-03 22:52:27.950 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-03 22:52:27.950 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:27.953 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:27.953 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:27.954 WARN  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:27.961 WARN  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 22:52:27.963 WARN  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 22:52:27.970 INFO  (main) [] o.e.j.s.Server Started Server@452ba1db{STARTING}[10.0.17,sto=0] @6661ms
+2024-02-03 22:52:27.973 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:27.985 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:27.986 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:27.990 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:27.991 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.CoreContainer Creating SolrCore 'helpFull' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/helpFull, trusted=true
+2024-02-03 22:52:27.991 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/helpFull], dataDir=[/workspaces/solr-9.4.0/server/solr/helpFull/data/]
+2024-02-03 22:52:27.993 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.CoreContainer Creating SolrCore 'users' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/users, trusted=true
+2024-02-03 22:52:27.994 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/users], dataDir=[/workspaces/solr-9.4.0/server/solr/users/data/]
+2024-02-03 22:52:28.361 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:28.365 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:28.370 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:28.388 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:28.389 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:28.392 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:28.392 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:28.396 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:28.396 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:28.429 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/helpFull/conf
+2024-02-03 22:52:28.433 INFO  (coreLoadExecutor-11-thread-2) [ x:helpFull] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:28.444 INFO  (searcherExecutor-30-thread-1-processing-helpFull) [ x:helpFull] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:28.446 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:28.447 WARN  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:28.447 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.ManagedIndexSchemaFactory The schema is configured as managed, but managed schema resource managed-schema.xml  not found - loading non-managed schema schema.xml instead
+2024-02-03 22:52:28.464 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:28.469 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:28.485 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/users/conf
+2024-02-03 22:52:28.486 INFO  (coreLoadExecutor-11-thread-3) [ x:users] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:28.489 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.8.0
+2024-02-03 22:52:28.495 INFO  (searcherExecutor-32-thread-1-processing-users) [ x:users] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:28.514 WARN  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrConfig Ignored deprecated enableRemoteStreaming in config; use sys-prop
+2024-02-03 22:52:28.514 WARN  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2024-02-03 22:52:28.517 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.IndexSchema Schema name=test
+2024-02-03 22:52:28.533 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.s.IndexSchema Loaded schema test/1.6 with uniqueid field ID
+2024-02-03 22:52:28.540 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /workspaces/solr-9.4.0/server/solr/reply/conf/managed-schema.xml
+2024-02-03 22:52:28.541 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.CoreContainer Creating SolrCore 'apiKey' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/apiKey, trusted=true
+2024-02-03 22:52:28.543 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/apiKey], dataDir=[/workspaces/solr-9.4.0/server/solr/apiKey/data/]
+2024-02-03 22:52:28.553 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.s.ManagedIndexSchemaFactory After upgrading to managed schema, renamed the non-managed schema /workspaces/solr-9.4.0/server/solr/reply/schema.xml to /workspaces/solr-9.4.0/server/solr/reply/schema.xml.bak
+2024-02-03 22:52:28.554 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.CoreContainer Creating SolrCore 'reply' using configuration from instancedir /workspaces/solr-9.4.0/server/solr/reply, trusted=true
+2024-02-03 22:52:28.554 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.c.SolrCore Opening new SolrCore at [/workspaces/solr-9.4.0/server/solr/reply], dataDir=[/workspaces/solr-9.4.0/server/solr/reply/data/]
+2024-02-03 22:52:28.631 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/content/conf
+2024-02-03 22:52:28.638 INFO  (coreLoadExecutor-11-thread-1) [ x:content] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:28.643 INFO  (searcherExecutor-28-thread-1-processing-content) [ x:content] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:28.713 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:28.729 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-03 22:52:28.742 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:28.742 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:28.746 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/reply/conf
+2024-02-03 22:52:28.747 INFO  (coreLoadExecutor-11-thread-2) [ x:reply] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:28.749 INFO  (searcherExecutor-45-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:28.757 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2024-02-03 22:52:28.757 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-02-03 22:52:28.767 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /workspaces/solr-9.4.0/server/solr/apiKey/conf
+2024-02-03 22:52:28.770 INFO  (coreLoadExecutor-11-thread-3) [ x:apiKey] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-03 22:52:28.773 INFO  (searcherExecutor-43-thread-1-processing-apiKey) [ x:apiKey] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:52:44.590 INFO  (qtp1866229258-23) [ x:helpFull t:localhost-2] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707000764373} status=0 QTime=17
+2024-02-03 22:52:44.670 INFO  (qtp1866229258-26) [ t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 22:52:44.796 INFO  (qtp1866229258-29) [ t:localhost-5] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=25
+2024-02-03 22:52:44.811 INFO  (qtp1866229258-26) [ x:helpFull t:localhost-4] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707000764373} hits=7 status=0 QTime=51
+2024-02-03 22:52:48.961 INFO  (qtp1866229258-26) [ t:localhost-10] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 22:52:48.963 INFO  (qtp1866229258-32) [ x:reply t:localhost-11] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1707000764322&ts=1707000764322} status=503 QTime=1
+2024-02-03 22:52:48.964 INFO  (qtp1866229258-31) [ x:reply t:localhost-6] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1707000768787} status=0 QTime=10
+2024-02-03 22:52:48.980 INFO  (qtp1866229258-27) [ t:localhost-8] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=20
+2024-02-03 22:52:48.982 INFO  (qtp1866229258-25) [ x:reply t:localhost-9] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1707000768788} status=0 QTime=22
+2024-02-03 22:52:48.994 INFO  (qtp1866229258-29) [ x:reply t:localhost-7] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1707000768787} status=0 QTime=38
+2024-02-03 22:52:50.292 INFO  (qtp1866229258-28) [ x:reply t:localhost-12] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707000764373} status=0 QTime=0
+2024-02-03 22:52:50.292 INFO  (qtp1866229258-30) [ t:localhost-13] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 22:52:50.304 INFO  (qtp1866229258-30) [ t:localhost-14] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=8
+2024-02-03 22:52:51.840 INFO  (qtp1866229258-23) [ t:localhost-15] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 22:52:51.845 INFO  (qtp1866229258-23) [ x:reply t:localhost-17] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707000764373} hits=0 status=0 QTime=1
+2024-02-03 22:52:51.853 INFO  (qtp1866229258-28) [ t:localhost-16] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=9
+2024-02-03 22:56:22.996 INFO  (qtp1866229258-26) [ x:reply t:localhost-19] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1707000768787} status=0 QTime=5
+2024-02-03 22:56:23.004 INFO  (qtp1866229258-25) [ t:localhost-20] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 22:56:23.009 INFO  (qtp1866229258-27) [ t:localhost-18] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=25
+2024-02-03 22:56:29.870 INFO  (qtp1866229258-25) [ x:reply t:localhost-21] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1707000768787}{add=[0b5e6d28-14c3-4497-82b9-6de95947f043]} 0 49
+2024-02-03 22:56:29.870 ERROR (qtp1866229258-25) [ x:reply t:localhost-21] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: ERROR: [doc=6374d152-9f9a-44df-a85a-1549cf25d256] unknown field 'helpFull'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:268)
+org.apache.solr.common.SolrException: ERROR: [doc=6374d152-9f9a-44df-a85a-1549cf25d256] unknown field 'helpFull'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:268) ~[?:?]
+	at org.apache.solr.update.AddUpdateCommand.makeLuceneDocs(AddUpdateCommand.java:213) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:1057) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:421) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:374) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:311) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:54) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:301) ~[?:?]
 	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:234) ~[?:?]
 	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:111) ~[?:?]
 	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleAdds(JsonLoader.java:553) ~[?:?]
@@ -198,34 +222,310 @@ org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey fi
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.17.jar:10.0.17]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.17.jar:10.0.17]
 	at java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-02-03 22:16:14.074 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@452ba1db{STOPPING}[10.0.17,sto=0]
-2024-02-03 22:16:14.080 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2024-02-03 22:16:14.103 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=28612052
-2024-02-03 22:16:14.105 INFO  (coreCloseExecutor-53-thread-1) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@300a9b5a contact
-2024-02-03 22:16:14.106 INFO  (coreCloseExecutor-53-thread-2) [ x:like] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@1e35d24d like
-2024-02-03 22:16:14.106 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@32ba955d review
-2024-02-03 22:16:14.107 INFO  (coreCloseExecutor-53-thread-4) [ x:helpFull] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@582274b2 helpFull
-2024-02-03 22:16:14.107 INFO  (coreCloseExecutor-53-thread-1) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@300a9b5a
-2024-02-03 22:16:14.117 INFO  (coreCloseExecutor-53-thread-5) [ x:users] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@6ac979d0 users
-2024-02-03 22:16:14.122 INFO  (coreCloseExecutor-53-thread-6) [ x:content] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@5ed04ed5 content
-2024-02-03 22:16:14.130 INFO  (coreCloseExecutor-53-thread-7) [ x:reply] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@5ae43503 reply
-2024-02-03 22:16:14.130 INFO  (coreCloseExecutor-53-thread-8) [ x:apiKey] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@6ba50df6 apiKey
-2024-02-03 22:16:14.142 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.review tag=SolrCore@32ba955d
-2024-02-03 22:16:14.158 INFO  (coreCloseExecutor-53-thread-1) [ x:contact] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.175 INFO  (coreCloseExecutor-53-thread-2) [ x:like] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.like tag=SolrCore@1e35d24d
-2024-02-03 22:16:14.189 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.202 INFO  (coreCloseExecutor-53-thread-4) [ x:helpFull] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.helpFull tag=SolrCore@582274b2
-2024-02-03 22:16:14.216 INFO  (coreCloseExecutor-53-thread-2) [ x:like] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.229 INFO  (coreCloseExecutor-53-thread-5) [ x:users] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.users tag=SolrCore@6ac979d0
-2024-02-03 22:16:14.230 INFO  (coreCloseExecutor-53-thread-4) [ x:helpFull] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.244 INFO  (coreCloseExecutor-53-thread-6) [ x:content] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.content tag=SolrCore@5ed04ed5
-2024-02-03 22:16:14.254 INFO  (coreCloseExecutor-53-thread-5) [ x:users] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.258 INFO  (coreCloseExecutor-53-thread-7) [ x:reply] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reply tag=SolrCore@5ae43503
-2024-02-03 22:16:14.275 INFO  (coreCloseExecutor-53-thread-6) [ x:content] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.288 INFO  (coreCloseExecutor-53-thread-8) [ x:apiKey] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.apiKey tag=SolrCore@6ba50df6
-2024-02-03 22:16:14.289 INFO  (coreCloseExecutor-53-thread-7) [ x:reply] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.316 INFO  (coreCloseExecutor-53-thread-8) [ x:apiKey] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2024-02-03 22:16:14.322 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2024-02-03 22:16:14.336 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2024-02-03 22:16:14.342 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2024-02-03 22:16:14.351 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@49a64d82{solr-jetty-context.xml,/solr,null,STOPPED}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
+2024-02-03 22:56:29.932 INFO  (searcherExecutor-45-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:58:04.563 INFO  (qtp1866229258-25) [ x:reply t:localhost-22] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1707000768787}{add=[0b5e6d28-14c3-4497-82b9-6de95947f043, 6374d152-9f9a-44df-a85a-1549cf25d256, 277c6c4f-0637-4484-b88a-3e1da1f41e6a, 1cc5dbc8-58cf-4afb-8d0b-109c072a29a2]} 0 4
+2024-02-03 22:58:04.564 ERROR (qtp1866229258-25) [ x:reply t:localhost-22] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Cannot parse provided JSON: Expected ',' or '}': char={,position=1228 AFTER=' "replyHeading":"Hello", "replyBody":"Yes Content29" {' BEFORE=' "ID":"9aed0be8-e538-42e1-ba9d-b213'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154)
+org.apache.solr.common.SolrException: Cannot parse provided JSON: Expected ',' or '}': char={,position=1228 AFTER=' "replyHeading":"Hello", "replyBody":"Yes Content29" {' BEFORE=' "ID":"9aed0be8-e538-42e1-ba9d-b213'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:86) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:102) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:100) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2901) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:246) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.17.jar:10.0.17]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-02-03 22:58:04.596 INFO  (searcherExecutor-45-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 22:59:11.302 INFO  (qtp1866229258-26) [ x:reply t:localhost-23] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1707000768787}{add=[0b5e6d28-14c3-4497-82b9-6de95947f043, 6374d152-9f9a-44df-a85a-1549cf25d256, 277c6c4f-0637-4484-b88a-3e1da1f41e6a, 1cc5dbc8-58cf-4afb-8d0b-109c072a29a2, 364d624e-b860-4988-a862-87f69cc3feb3]} 0 4
+2024-02-03 22:59:11.302 ERROR (qtp1866229258-26) [ x:reply t:localhost-23] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Cannot parse provided JSON: Expected ',' or ']': char={,position=1230 AFTER='"replyHeading":"Hello", "replyBody":"Yes Content29" } {' BEFORE=' "ID":"9aed0be8-e538-42e1-ba9d-b213'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154)
+org.apache.solr.common.SolrException: Cannot parse provided JSON: Expected ',' or ']': char={,position=1230 AFTER='"replyHeading":"Hello", "replyBody":"Yes Content29" } {' BEFORE=' "ID":"9aed0be8-e538-42e1-ba9d-b213'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:86) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:102) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:100) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2901) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:246) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.17.jar:10.0.17]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.17.jar:10.0.17]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-02-03 22:59:11.324 INFO  (searcherExecutor-45-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 23:00:13.805 INFO  (qtp1866229258-25) [ x:reply t:localhost-24] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1707000768787}{add=[0b5e6d28-14c3-4497-82b9-6de95947f043, 6374d152-9f9a-44df-a85a-1549cf25d256, 277c6c4f-0637-4484-b88a-3e1da1f41e6a, 1cc5dbc8-58cf-4afb-8d0b-109c072a29a2, 364d624e-b860-4988-a862-87f69cc3feb3, 9aed0be8-e538-42e1-ba9d-b21321e9d773, fa2715ff-af37-4924-b7f4-d5d686ecc876]} 0 4
+2024-02-03 23:00:13.827 INFO  (searcherExecutor-45-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-03 23:00:17.651 INFO  (qtp1866229258-26) [ t:localhost-25] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=9
+2024-02-03 23:00:17.702 INFO  (qtp1866229258-25) [ t:localhost-26] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:00:17.721 INFO  (qtp1866229258-25) [ x:reply t:localhost-27] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707000764373} status=0 QTime=1
+2024-02-03 23:00:21.168 INFO  (qtp1866229258-25) [ x:reply t:localhost-29] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707000764373} hits=7 status=0 QTime=2
+2024-02-03 23:00:21.172 INFO  (qtp1866229258-29) [ t:localhost-30] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:00:21.240 INFO  (qtp1866229258-32) [ t:localhost-31] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=7
+2024-02-03 23:03:12.744 INFO  (qtp1866229258-32) [ x:content t:localhost-32] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=*:*&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=7 status=0 QTime=31
+2024-02-03 23:03:12.900 INFO  (qtp1866229258-27) [ x:review t:localhost-33] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:21&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=24
+2024-02-03 23:03:12.900 INFO  (qtp1866229258-29) [ x:review t:localhost-36] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2111&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=6
+2024-02-03 23:03:12.902 INFO  (qtp1866229258-31) [ x:review t:localhost-35] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:29&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=9
+2024-02-03 23:03:12.908 INFO  (qtp1866229258-32) [ x:review t:localhost-34] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:1&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=20
+2024-02-03 23:03:12.921 INFO  (qtp1866229258-28) [ x:review t:localhost-37] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:23&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:12.922 INFO  (qtp1866229258-23) [ x:review t:localhost-38] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:03:12.963 INFO  (qtp1866229258-23) [ x:review t:localhost-39] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.007 INFO  (qtp1866229258-23) [ x:reply t:localhost-41] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.017 INFO  (qtp1866229258-30) [ x:helpFull t:localhost-40] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=21
+2024-02-03 23:03:13.024 INFO  (qtp1866229258-29) [ x:like t:localhost-42] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.130 INFO  (qtp1866229258-23) [ x:like t:localhost-43] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.139 INFO  (qtp1866229258-29) [ x:reply t:localhost-44] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.143 INFO  (qtp1866229258-29) [ x:like t:localhost-45] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.148 INFO  (qtp1866229258-23) [ x:like t:localhost-46] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.200 INFO  (qtp1866229258-26) [ x:helpFull t:localhost-47] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.235 INFO  (qtp1866229258-29) [ x:helpFull t:localhost-48] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.235 INFO  (qtp1866229258-26) [ x:reply t:localhost-50] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.236 INFO  (qtp1866229258-28) [ x:helpFull t:localhost-49] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=3
+2024-02-03 23:03:13.255 INFO  (qtp1866229258-31) [ x:reply t:localhost-51] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.274 INFO  (qtp1866229258-29) [ x:like t:localhost-52] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.283 INFO  (qtp1866229258-31) [ x:reply t:localhost-53] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.286 INFO  (qtp1866229258-29) [ x:like t:localhost-54] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.286 INFO  (qtp1866229258-25) [ x:helpFull t:localhost-55] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.291 INFO  (qtp1866229258-30) [ x:like t:localhost-56] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.293 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-57] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.296 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-59] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:13.296 INFO  (qtp1866229258-23) [ x:reply t:localhost-60] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:03:13.297 INFO  (qtp1866229258-26) [ x:reply t:localhost-58] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=4
+2024-02-03 23:03:27.098 INFO  (qtp1866229258-32) [ x:content t:localhost-61] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=*:*&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=7 status=0 QTime=1
+2024-02-03 23:03:27.188 INFO  (qtp1866229258-29) [ x:review t:localhost-62] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2111&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.204 INFO  (qtp1866229258-32) [ x:review t:localhost-63] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.214 INFO  (qtp1866229258-29) [ x:review t:localhost-64] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:23&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.218 INFO  (qtp1866229258-32) [ x:review t:localhost-65] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:03:27.220 INFO  (qtp1866229258-27) [ x:review t:localhost-66] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:21&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:03:27.229 INFO  (qtp1866229258-27) [ x:review t:localhost-67] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:29&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=3
+2024-02-03 23:03:27.233 INFO  (qtp1866229258-32) [ x:review t:localhost-68] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:1&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.361 INFO  (qtp1866229258-27) [ x:reply t:localhost-69] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:03:27.400 INFO  (qtp1866229258-25) [ x:helpFull t:localhost-72] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.407 INFO  (qtp1866229258-28) [ x:like t:localhost-73] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=5
+2024-02-03 23:03:27.408 INFO  (qtp1866229258-23) [ x:like t:localhost-75] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=3
+2024-02-03 23:03:27.409 INFO  (qtp1866229258-30) [ x:reply t:localhost-76] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:03:27.410 INFO  (qtp1866229258-26) [ x:helpFull t:localhost-74] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=8
+2024-02-03 23:03:27.411 INFO  (qtp1866229258-29) [ x:helpFull t:localhost-77] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.412 INFO  (qtp1866229258-32) [ x:like t:localhost-70] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=14
+2024-02-03 23:03:27.417 INFO  (qtp1866229258-27) [ x:helpFull t:localhost-71] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=19
+2024-02-03 23:03:27.421 INFO  (qtp1866229258-31) [ x:like t:localhost-78] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.426 INFO  (qtp1866229258-29) [ x:reply t:localhost-80] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.429 INFO  (qtp1866229258-26) [ x:reply t:localhost-81] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:03:27.431 INFO  (qtp1866229258-31) [ x:reply t:localhost-82] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:03:27.433 INFO  (qtp1866229258-23) [ x:reply t:localhost-79] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=3
+2024-02-03 23:03:27.434 INFO  (qtp1866229258-28) [ x:reply t:localhost-83] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.521 INFO  (qtp1866229258-28) [ x:like t:localhost-84] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.523 INFO  (qtp1866229258-25) [ x:like t:localhost-85] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.528 INFO  (qtp1866229258-30) [ x:like t:localhost-86] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.531 INFO  (qtp1866229258-27) [ x:helpFull t:localhost-88] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:03:27.531 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-89] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:03:27.533 INFO  (qtp1866229258-25) [ x:helpFull t:localhost-87] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=5
+2024-02-03 23:06:08.538 INFO  (qtp1866229258-30) [ x:content t:localhost-90] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=ID:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:06:08.617 INFO  (qtp1866229258-29) [ x:review t:localhost-91] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:06:08.685 INFO  (qtp1866229258-30) [ x:like t:localhost-92] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:06:08.693 INFO  (qtp1866229258-29) [ x:reply t:localhost-93] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:06:08.768 INFO  (qtp1866229258-30) [ x:helpFull t:localhost-94] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:07:39.539 INFO  (qtp1866229258-30) [ x:content t:localhost-95] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=ID:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:07:39.621 INFO  (qtp1866229258-29) [ x:review t:localhost-96] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:07:39.697 INFO  (qtp1866229258-30) [ x:helpFull t:localhost-97] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:07:39.709 INFO  (qtp1866229258-29) [ x:like t:localhost-98] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:07:39.718 INFO  (qtp1866229258-30) [ x:reply t:localhost-99] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:09:07.379 INFO  (qtp1866229258-29) [ x:content t:localhost-100] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1707000764322&ts=1707000764322} status=503 QTime=0
+2024-02-03 23:09:07.380 INFO  (qtp1866229258-30) [ t:localhost-101] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:09:07.380 INFO  (qtp1866229258-27) [ x:content t:localhost-102] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1707000768787} status=0 QTime=0
+2024-02-03 23:09:07.408 INFO  (qtp1866229258-30) [ x:content t:localhost-103] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1707000768787} status=0 QTime=6
+2024-02-03 23:09:07.452 INFO  (qtp1866229258-31) [ t:localhost-104] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=19
+2024-02-03 23:09:07.477 INFO  (qtp1866229258-30) [ x:content t:localhost-105] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1707000768788} status=0 QTime=4
+2024-02-03 23:09:09.056 INFO  (qtp1866229258-30) [ t:localhost-106] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=6
+2024-02-03 23:09:09.058 INFO  (qtp1866229258-31) [ x:content t:localhost-107] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707000764373} status=0 QTime=8
+2024-02-03 23:09:09.059 INFO  (qtp1866229258-27) [ t:localhost-108] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:09:10.812 INFO  (qtp1866229258-31) [ t:localhost-109] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:09:10.821 INFO  (qtp1866229258-25) [ t:localhost-110] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=9
+2024-02-03 23:09:10.825 INFO  (qtp1866229258-67) [ x:content t:localhost-111] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707000764373} hits=7 status=0 QTime=3
+2024-02-03 23:09:25.487 INFO  (qtp1866229258-31) [ t:localhost-112] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:09:25.491 INFO  (qtp1866229258-32) [ x:review t:localhost-114] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1707000768787} status=0 QTime=4
+2024-02-03 23:09:25.492 INFO  (qtp1866229258-29) [ x:review t:localhost-113] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1707000764322&ts=1707000764322} status=503 QTime=0
+2024-02-03 23:09:25.497 INFO  (qtp1866229258-27) [ x:review t:localhost-116] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1707000768787} status=0 QTime=9
+2024-02-03 23:09:25.499 INFO  (qtp1866229258-28) [ x:review t:localhost-117] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1707000768788} status=0 QTime=2
+2024-02-03 23:09:25.504 INFO  (qtp1866229258-67) [ t:localhost-115] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=16
+2024-02-03 23:16:35.171 INFO  (qtp1866229258-29) [ x:content t:localhost-118] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=ID:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:35.373 INFO  (qtp1866229258-30) [ x:review t:localhost-119] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:35.467 INFO  (qtp1866229258-32) [ x:reply t:localhost-120] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:35.539 INFO  (qtp1866229258-30) [ x:like t:localhost-121] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=3
+2024-02-03 23:16:35.554 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-122] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.598 INFO  (qtp1866229258-30) [ x:content t:localhost-123] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=*:*&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=7 status=0 QTime=1
+2024-02-03 23:16:47.674 INFO  (qtp1866229258-32) [ x:review t:localhost-124] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.677 INFO  (qtp1866229258-32) [ x:review t:localhost-125] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:23&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.706 INFO  (qtp1866229258-30) [ x:review t:localhost-126] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:1&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.711 INFO  (qtp1866229258-32) [ x:review t:localhost-127] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:29&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.752 INFO  (qtp1866229258-30) [ x:reply t:localhost-128] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.763 INFO  (qtp1866229258-32) [ x:like t:localhost-129] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.807 INFO  (qtp1866229258-30) [ x:reply t:localhost-130] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.810 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-131] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.812 INFO  (qtp1866229258-32) [ x:like t:localhost-132] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.865 INFO  (qtp1866229258-32) [ x:like t:localhost-133] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.889 INFO  (qtp1866229258-30) [ x:review t:localhost-134] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:21&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.891 INFO  (qtp1866229258-27) [ x:review t:localhost-135] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.893 INFO  (qtp1866229258-27) [ x:helpFull t:localhost-136] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.893 INFO  (qtp1866229258-32) [ x:reply t:localhost-137] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.895 INFO  (qtp1866229258-26) [ x:reply t:localhost-138] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.896 INFO  (qtp1866229258-26) [ x:like t:localhost-139] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.898 INFO  (qtp1866229258-27) [ x:helpFull t:localhost-140] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.914 INFO  (qtp1866229258-26) [ x:review t:localhost-141] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2111&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.917 INFO  (qtp1866229258-30) [ x:helpFull t:localhost-142] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.956 INFO  (qtp1866229258-26) [ x:helpFull t:localhost-143] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.961 INFO  (qtp1866229258-30) [ x:reply t:localhost-144] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.963 INFO  (qtp1866229258-26) [ x:like t:localhost-145] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.967 INFO  (qtp1866229258-30) [ x:helpFull t:localhost-146] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.972 INFO  (qtp1866229258-26) [ x:reply t:localhost-147] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.980 INFO  (qtp1866229258-26) [ x:like t:localhost-149] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:16:47.982 INFO  (qtp1866229258-30) [ x:reply t:localhost-148] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=5
+2024-02-03 23:16:47.982 INFO  (qtp1866229258-25) [ x:like t:localhost-150] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:16:47.986 INFO  (qtp1866229258-29) [ x:helpFull t:localhost-151] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:18:14.477 INFO  (qtp1866229258-31) [ x:users t:localhost-152] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1706985505671} status=0 QTime=0
+2024-02-03 23:18:14.479 INFO  (qtp1866229258-32) [ t:localhost-153] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706985505635} status=0 QTime=0
+2024-02-03 23:18:14.487 INFO  (qtp1866229258-32) [ t:localhost-154] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706985505635} status=0 QTime=6
+2024-02-03 23:18:14.487 INFO  (qtp1866229258-29) [ x:users t:localhost-155] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1706989460920} status=0 QTime=1
+2024-02-03 23:18:14.489 INFO  (qtp1866229258-25) [ x:users t:localhost-157] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1706985505635&ts=1706985505635} status=503 QTime=0
+2024-02-03 23:18:14.495 INFO  (qtp1866229258-29) [ x:users t:localhost-156] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1706989460920} status=0 QTime=6
+2024-02-03 23:18:16.289 INFO  (qtp1866229258-26) [ t:localhost-158] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706985505635} status=0 QTime=0
+2024-02-03 23:18:16.293 INFO  (qtp1866229258-26) [ x:users t:localhost-160] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1706985795121} status=0 QTime=0
+2024-02-03 23:18:16.298 INFO  (qtp1866229258-25) [ t:localhost-159] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706985505635} status=0 QTime=6
+2024-02-03 23:18:18.287 INFO  (qtp1866229258-30) [ t:localhost-162] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1706985505635} status=0 QTime=0
+2024-02-03 23:18:18.290 INFO  (qtp1866229258-27) [ x:users t:localhost-163] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1706985795120} hits=1 status=0 QTime=0
+2024-02-03 23:18:18.295 INFO  (qtp1866229258-26) [ t:localhost-161] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1706985505635} status=0 QTime=8
+2024-02-03 23:19:26.131 INFO  (qtp1866229258-28) [ x:content t:localhost-164] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=*:*&facet.field=ID&fl=&start=0&fq=&sort=&rows=20&facet=true&wt=xml&version=2.2} hits=7 status=0 QTime=1
+2024-02-03 23:19:26.214 INFO  (qtp1866229258-32) [ x:review t:localhost-165] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:21&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:19:26.214 INFO  (qtp1866229258-28) [ x:review t:localhost-166] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:29&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.217 INFO  (qtp1866229258-31) [ x:review t:localhost-168] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:211&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.218 INFO  (qtp1866229258-32) [ x:review t:localhost-167] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:23&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:19:26.222 INFO  (qtp1866229258-31) [ x:review t:localhost-169] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2111&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.223 INFO  (qtp1866229258-67) [ x:review t:localhost-170] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:1&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.225 INFO  (qtp1866229258-67) [ x:review t:localhost-171] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewContentId:2&facet.field=reviewRatting&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.279 INFO  (qtp1866229258-67) [ x:reply t:localhost-172] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:19:26.283 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-173] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.290 INFO  (qtp1866229258-67) [ x:helpFull t:localhost-174] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.295 INFO  (qtp1866229258-32) [ x:reply t:localhost-175] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.302 INFO  (qtp1866229258-67) [ x:like t:localhost-176] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1c275e6-1ac6-4dc4-85dd-bb1c213acedc+%26%26+contentId:29&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.304 INFO  (qtp1866229258-32) [ x:like t:localhost-177] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.306 INFO  (qtp1866229258-32) [ x:reply t:localhost-178] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.318 INFO  (qtp1866229258-32) [ x:reply t:localhost-180] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.318 INFO  (qtp1866229258-67) [ x:like t:localhost-179] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:84caa46d-2727-4301-90eb-5e115a05fec6+%26%26+contentId:21&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.331 INFO  (qtp1866229258-29) [ x:reply t:localhost-181] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:19:26.335 INFO  (qtp1866229258-32) [ x:helpFull t:localhost-182] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.338 INFO  (qtp1866229258-67) [ x:helpFull t:localhost-185] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:afcb04ac-db58-44a5-9df2-33995457ca86+%26%26+contentId:23&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.338 INFO  (qtp1866229258-26) [ x:like t:localhost-184] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.340 INFO  (qtp1866229258-31) [ x:reply t:localhost-186] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.342 INFO  (qtp1866229258-32) [ x:reply t:localhost-187] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:19:26.344 INFO  (qtp1866229258-29) [ x:like t:localhost-183] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:96663674-72cc-4bf0-ac0d-cd51a934287d+%26%26+contentId:211&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=7
+2024-02-03 23:19:26.348 INFO  (qtp1866229258-27) [ x:like t:localhost-188] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.357 INFO  (qtp1866229258-25) [ x:helpFull t:localhost-189] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:1cf1bc8d-35e7-4977-bfc5-99157caf3ced+%26%26+contentId:1&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.363 INFO  (qtp1866229258-27) [ x:helpFull t:localhost-190] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:dd83d168-7b25-47be-a042-e2ecc4fd4db2+%26%26+contentId:2111&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=0
+2024-02-03 23:19:26.375 INFO  (qtp1866229258-25) [ x:like t:localhost-191] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&facet.field=like&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=1
+2024-02-03 23:19:26.383 INFO  (qtp1866229258-25) [ x:helpFull t:localhost-192] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=&q=reviewId:f1d4ff07-2398-4022-94ee-f1ef2413cfb3+%26%26+contentId:2&facet.field=ID&fl=&start=0&fq=&sort=&rows=10&facet=true&wt=xml&version=2.2} hits=1 status=0 QTime=2
+2024-02-03 23:20:18.713 INFO  (qtp1866229258-27) [ x:users t:localhost-193] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1707000768787} status=0 QTime=0
+2024-02-03 23:20:18.715 INFO  (qtp1866229258-25) [ t:localhost-194] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:20:18.723 INFO  (qtp1866229258-25) [ x:users t:localhost-196] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1707000764322&ts=1707000764322} status=503 QTime=0
+2024-02-03 23:20:18.731 INFO  (qtp1866229258-30) [ x:users t:localhost-198] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1707000768788} status=0 QTime=1
+2024-02-03 23:20:18.738 INFO  (qtp1866229258-27) [ x:users t:localhost-197] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1707000768787} status=0 QTime=13
+2024-02-03 23:20:18.739 INFO  (qtp1866229258-28) [ t:localhost-195] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=20
+2024-02-03 23:20:21.830 INFO  (qtp1866229258-25) [ x:users t:localhost-199] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1707000768787} status=0 QTime=0
+2024-02-03 23:20:21.831 INFO  (qtp1866229258-30) [ t:localhost-200] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:20:21.833 INFO  (qtp1866229258-30) [ x:users t:localhost-201] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1707002421757} status=0 QTime=0
+2024-02-03 23:20:21.845 INFO  (qtp1866229258-67) [ t:localhost-202] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=11
+2024-02-03 23:20:21.857 INFO  (qtp1866229258-29) [ x:users t:localhost-203] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1707000768787} status=0 QTime=2
+2024-02-03 23:20:36.177 INFO  (qtp1866229258-27) [ x:users t:localhost-204] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707000764373} status=0 QTime=0
+2024-02-03 23:20:36.177 INFO  (qtp1866229258-31) [ t:localhost-205] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:20:36.184 INFO  (qtp1866229258-31) [ t:localhost-206] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=5
+2024-02-03 23:20:38.020 INFO  (qtp1866229258-30) [ x:users t:localhost-208] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707000764373} hits=1 status=0 QTime=0
+2024-02-03 23:20:38.022 INFO  (qtp1866229258-30) [ t:localhost-209] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707000764322} status=0 QTime=0
+2024-02-03 23:20:38.028 INFO  (qtp1866229258-31) [ t:localhost-207] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707000764322} status=0 QTime=8
