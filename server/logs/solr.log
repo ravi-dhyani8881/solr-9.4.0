@@ -154,3 +154,89 @@
 2024-02-04 22:57:10.431 INFO  (qtp1866229258-71) [ x:reply t:localhost-26] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087383872} hits=7 status=0 QTime=6
 2024-02-04 22:57:10.431 INFO  (qtp1866229258-75) [ t:localhost-25] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087378516} status=0 QTime=7
 2024-02-04 22:57:10.433 INFO  (qtp1866229258-27) [ t:localhost-28] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087378515} status=0 QTime=0
+2024-02-04 22:58:49.618 INFO  (qtp1866229258-72) [ x:reply t:localhost-30] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1707087382546} status=0 QTime=0
+2024-02-04 22:58:49.619 INFO  (qtp1866229258-32) [ t:localhost-31] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087378515} status=0 QTime=0
+2024-02-04 22:58:49.625 INFO  (qtp1866229258-27) [ t:localhost-29] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087378516} status=0 QTime=7
+2024-02-04 22:58:55.450 INFO  (qtp1866229258-69) [ x:reply t:localhost-32] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=10&overwrite=true&wt=json&_=1707087382546}{add=[0b5e6d28-14c3-4497-82b9-6de95947f043, 6374d152-9f9a-44df-a85a-1549cf25d256, 277c6c4f-0637-4484-b88a-3e1da1f41e6a, 1cc5dbc8-58cf-4afb-8d0b-109c072a29a2, 364d624e-b860-4988-a862-87f69cc3feb3, 9aed0be8-e538-42e1-ba9d-b21321e9d773, fa2715ff-af37-4924-b7f4-d5d686ecc876]} 0 4
+2024-02-04 22:58:55.471 INFO  (searcherExecutor-43-thread-1-processing-reply) [ x:reply] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-04 22:58:58.269 INFO  (qtp1866229258-32) [ x:reply t:localhost-33] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087383872} status=0 QTime=0
+2024-02-04 22:58:58.278 INFO  (qtp1866229258-69) [ t:localhost-35] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087378515} status=0 QTime=0
+2024-02-04 22:58:58.283 INFO  (qtp1866229258-27) [ t:localhost-34] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087378516} status=0 QTime=5
+2024-02-04 22:58:59.950 INFO  (qtp1866229258-72) [ t:localhost-36] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087378515} status=0 QTime=0
+2024-02-04 22:58:59.951 INFO  (qtp1866229258-27) [ x:reply t:localhost-38] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087383872} hits=7 status=0 QTime=1
+2024-02-04 22:58:59.956 INFO  (qtp1866229258-32) [ t:localhost-37] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087378516} status=0 QTime=6
+2024-02-04 22:59:03.675 INFO  (qtp1866229258-72) [ x:reply t:localhost-44] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087543577} status=0 QTime=0
+2024-02-04 22:59:03.675 INFO  (qtp1866229258-75) [ t:localhost-41] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087543536} status=0 QTime=0
+2024-02-04 22:59:03.676 INFO  (qtp1866229258-71) [ x:reply t:localhost-42] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087543577} hits=7 status=0 QTime=2
+2024-02-04 22:59:03.681 INFO  (qtp1866229258-69) [ t:localhost-43] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087543536} status=0 QTime=6
+2024-02-04 22:59:03.946 INFO  (qtp1866229258-27) [ t:localhost-46] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087543818} status=0 QTime=0
+2024-02-04 22:59:03.946 INFO  (qtp1866229258-74) [ x:reply t:localhost-47] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087543844} hits=7 status=0 QTime=0
+2024-02-04 22:59:03.946 INFO  (qtp1866229258-71) [ x:reply t:localhost-48] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087543844} status=0 QTime=0
+2024-02-04 22:59:03.953 INFO  (qtp1866229258-75) [ t:localhost-49] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087543818} status=0 QTime=5
+2024-02-04 22:59:04.213 INFO  (qtp1866229258-72) [ x:reply t:localhost-51] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087544116} status=0 QTime=0
+2024-02-04 22:59:04.214 INFO  (qtp1866229258-27) [ x:reply t:localhost-52] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087544116} hits=7 status=0 QTime=0
+2024-02-04 22:59:04.214 INFO  (qtp1866229258-71) [ t:localhost-54] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087544089} status=0 QTime=0
+2024-02-04 22:59:04.220 INFO  (qtp1866229258-74) [ t:localhost-53] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087544089} status=0 QTime=7
+2024-02-04 22:59:04.445 INFO  (qtp1866229258-27) [ x:reply t:localhost-56] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087544348} status=0 QTime=0
+2024-02-04 22:59:04.445 INFO  (qtp1866229258-70) [ t:localhost-59] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087544323} status=0 QTime=0
+2024-02-04 22:59:04.446 INFO  (qtp1866229258-35) [ x:reply t:localhost-58] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087544348} hits=7 status=0 QTime=0
+2024-02-04 22:59:04.452 INFO  (qtp1866229258-71) [ t:localhost-57] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087544323} status=0 QTime=7
+2024-02-04 22:59:04.642 INFO  (qtp1866229258-72) [ t:localhost-61] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087544519} status=0 QTime=0
+2024-02-04 22:59:04.642 INFO  (qtp1866229258-35) [ x:reply t:localhost-62] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087544544} status=0 QTime=0
+2024-02-04 22:59:04.646 INFO  (qtp1866229258-34) [ x:reply t:localhost-64] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087544544} hits=7 status=0 QTime=0
+2024-02-04 22:59:04.649 INFO  (qtp1866229258-70) [ t:localhost-63] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087544519} status=0 QTime=7
+2024-02-04 22:59:04.840 INFO  (qtp1866229258-34) [ t:localhost-67] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087544718} status=0 QTime=0
+2024-02-04 22:59:04.841 INFO  (qtp1866229258-76) [ x:reply t:localhost-68] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087544744} hits=7 status=0 QTime=0
+2024-02-04 22:59:04.842 INFO  (qtp1866229258-27) [ x:reply t:localhost-69] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087544744} status=0 QTime=0
+2024-02-04 22:59:04.846 INFO  (qtp1866229258-72) [ t:localhost-66] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087544719} status=0 QTime=6
+2024-02-04 22:59:05.022 INFO  (qtp1866229258-76) [ x:reply t:localhost-71] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087544926} status=0 QTime=0
+2024-02-04 22:59:05.022 INFO  (qtp1866229258-35) [ t:localhost-72] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087544901} status=0 QTime=0
+2024-02-04 22:59:05.024 INFO  (qtp1866229258-34) [ x:reply t:localhost-74] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087544926} hits=7 status=0 QTime=0
+2024-02-04 22:59:05.028 INFO  (qtp1866229258-79) [ t:localhost-73] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087544901} status=0 QTime=6
+2024-02-04 22:59:05.239 INFO  (qtp1866229258-27) [ x:reply t:localhost-77] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087545142} status=0 QTime=0
+2024-02-04 22:59:05.239 INFO  (qtp1866229258-34) [ t:localhost-78] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087545117} status=0 QTime=0
+2024-02-04 22:59:05.239 INFO  (qtp1866229258-76) [ x:reply t:localhost-76] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087545142} hits=7 status=0 QTime=0
+2024-02-04 22:59:05.246 INFO  (qtp1866229258-79) [ t:localhost-79] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087545117} status=0 QTime=5
+2024-02-04 22:59:05.439 INFO  (qtp1866229258-35) [ x:reply t:localhost-82] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087545343} status=0 QTime=0
+2024-02-04 22:59:05.439 INFO  (qtp1866229258-34) [ t:localhost-84] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087545317} status=0 QTime=0
+2024-02-04 22:59:05.439 INFO  (qtp1866229258-29) [ x:reply t:localhost-83] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087545343} hits=7 status=0 QTime=0
+2024-02-04 22:59:05.446 INFO  (qtp1866229258-76) [ t:localhost-81] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087545317} status=0 QTime=7
+2024-02-04 22:59:05.651 INFO  (qtp1866229258-34) [ x:reply t:localhost-89] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087545556} status=0 QTime=0
+2024-02-04 22:59:05.651 INFO  (qtp1866229258-29) [ t:localhost-88] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087545529} status=0 QTime=0
+2024-02-04 22:59:05.652 INFO  (qtp1866229258-35) [ x:reply t:localhost-87] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087545555} hits=7 status=0 QTime=0
+2024-02-04 22:59:05.656 INFO  (qtp1866229258-27) [ t:localhost-86] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087545530} status=0 QTime=5
+2024-02-04 22:59:05.852 INFO  (qtp1866229258-78) [ t:localhost-91] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707087545733} status=0 QTime=0
+2024-02-04 22:59:05.854 INFO  (qtp1866229258-35) [ x:reply t:localhost-93] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1707087545757} status=0 QTime=2
+2024-02-04 22:59:05.856 INFO  (qtp1866229258-34) [ x:reply t:localhost-94] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1707087545757} hits=7 status=0 QTime=0
+2024-02-04 22:59:05.859 INFO  (qtp1866229258-77) [ t:localhost-92] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707087545733} status=0 QTime=7
+2024-02-04 22:59:23.044 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@452ba1db{STOPPING}[10.0.17,sto=0]
+2024-02-04 22:59:23.047 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@77602954{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-04 22:59:23.058 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1579015748
+2024-02-04 22:59:23.063 INFO  (coreCloseExecutor-53-thread-1) [ x:like] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@350e6f04 like
+2024-02-04 22:59:23.063 INFO  (coreCloseExecutor-53-thread-1) [ x:like] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.like tag=SolrCore@350e6f04
+2024-02-04 22:59:23.065 INFO  (coreCloseExecutor-53-thread-2) [ x:contact] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@3533a4f9 contact
+2024-02-04 22:59:23.066 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@7e1c0043 review
+2024-02-04 22:59:23.066 INFO  (coreCloseExecutor-53-thread-4) [ x:users] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@156ca3d8 users
+2024-02-04 22:59:23.066 INFO  (coreCloseExecutor-53-thread-5) [ x:helpFull] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@7de479c8 helpFull
+2024-02-04 22:59:23.067 INFO  (coreCloseExecutor-53-thread-6) [ x:reply] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@7d02cb2c reply
+2024-02-04 22:59:23.075 INFO  (coreCloseExecutor-53-thread-7) [ x:apiKey] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@4c8d020b apiKey
+2024-02-04 22:59:23.079 INFO  (coreCloseExecutor-53-thread-8) [ x:content] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@43e14030 content
+2024-02-04 22:59:23.091 INFO  (coreCloseExecutor-53-thread-2) [ x:contact] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.contact tag=SolrCore@3533a4f9
+2024-02-04 22:59:23.094 INFO  (coreCloseExecutor-53-thread-1) [ x:like] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.108 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.review tag=SolrCore@7e1c0043
+2024-02-04 22:59:23.115 INFO  (coreCloseExecutor-53-thread-2) [ x:contact] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.123 INFO  (coreCloseExecutor-53-thread-4) [ x:users] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.users tag=SolrCore@156ca3d8
+2024-02-04 22:59:23.131 INFO  (coreCloseExecutor-53-thread-3) [ x:review] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.135 INFO  (coreCloseExecutor-53-thread-5) [ x:helpFull] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.helpFull tag=SolrCore@7de479c8
+2024-02-04 22:59:23.145 INFO  (coreCloseExecutor-53-thread-4) [ x:users] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.147 INFO  (coreCloseExecutor-53-thread-6) [ x:reply] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reply tag=SolrCore@7d02cb2c
+2024-02-04 22:59:23.159 INFO  (coreCloseExecutor-53-thread-5) [ x:helpFull] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.162 INFO  (coreCloseExecutor-53-thread-7) [ x:apiKey] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.apiKey tag=SolrCore@4c8d020b
+2024-02-04 22:59:23.164 INFO  (coreCloseExecutor-53-thread-6) [ x:reply] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.186 INFO  (coreCloseExecutor-53-thread-8) [ x:content] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.content tag=SolrCore@43e14030
+2024-02-04 22:59:23.187 INFO  (coreCloseExecutor-53-thread-7) [ x:apiKey] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.201 INFO  (coreCloseExecutor-53-thread-8) [ x:content] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-04 22:59:23.317 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2024-02-04 22:59:23.325 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2024-02-04 22:59:23.331 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2024-02-04 22:59:23.337 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@344561e0{solr-jetty-context.xml,/solr,null,STOPPED}{/workspaces/solr-9.4.0/server/solr-webapp/webapp}
