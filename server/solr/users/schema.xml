@@ -60,6 +60,7 @@
   <field name="userStatus" type="string" indexed="true" stored="true" default="I"/>
   <field name="apiKey" type="string" indexed="true" stored="true" />
   <field name="userActivationKey" type="string" indexed="true" stored="true"/>
+  <field name="orgID" type="string" indexed="true" stored="true"/>
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
        will be used if the name matches any of the patterns.
