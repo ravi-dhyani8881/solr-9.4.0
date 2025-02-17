@@ -51,7 +51,7 @@
   <field name="firstName" type="string" indexed="true" stored="true"/>
   <field name="lastName" type="string" indexed="true" stored="true"/>
   <field name="middleName" type="string" indexed="true" stored="true"/>
-  <field name="emailAddress" type="string" indexed="true" stored="true"/>
+  <field name="email" type="string" indexed="true" stored="true"/>
   <field name="phoneNumber" type="string" indexed="true" stored="true"/>
   <field name="gender" type="string" indexed="true" stored="true"/>
   <field name="birthday" type="string" indexed="true" stored="true"/>
