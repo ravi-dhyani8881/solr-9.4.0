@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
+<schema name="test" version="1.6">
+  <uniqueKey>ID</uniqueKey>
+  <fieldType name="date" class="solr.TrieDateField" omitNorms="true" sortMissingLast="true"/>
+  <fieldType name="nametext" class="solr.TextField">
+    <analyzer class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
+  </fieldType>
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
+  <fieldType name="text" class="solr.TextField">
+    <analyzer>
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.StopFilterFactory"/>
+      <filter class="solr.PorterStemFilterFactory"/>
+    </analyzer>
+  </fieldType>
+  <field name="ID" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="graphID" type="string" indexed="true" stored="true"/>
+  <field name="graphVersion" type="string" indexed="true" stored="true"/>
+  <field name="replicaCount" type="string" indexed="true" stored="true"/>
+  <field name="replicaSize" type="string" indexed="true" stored="true"/>
+  <dynamicField name="lastUpdate_*" type="date" indexed="true" stored="false"/>
+  <dynamicField name="addedDate_*" type="date" indexed="true" stored="false"/>
+  <dynamicField name="userId_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="apiKey_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="status_*" type="string" indexed="true" stored="false"/>
+  <dynamicField name="*_sm" type="string" multiValued="true" indexed="true" stored="true"/>
+  <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
+</schema>
